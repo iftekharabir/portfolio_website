@@ -23,3 +23,4 @@ Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
 Route::get('/projects/{project:uuid}', [ProjectsController::class, 'single'])->name('projects.single');
 Route::get('/contact', [ContactController::class, "index"])->name('contact');
 Route::post('/contact', [ContactController::class, "sendMsg"]);
+Route::put("/gallery", [GalleryController::class, "update"])->name("gallery");
